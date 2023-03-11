@@ -1,11 +1,11 @@
-About klongpy
-=============
+About klongpy-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/klongpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/briangu/klongpy
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/klongpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python implementation of Klong language.
 
