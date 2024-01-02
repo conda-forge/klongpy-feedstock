@@ -20,7 +20,7 @@ requirements:
     - python
   run:
     - python
-    - numpy ~=1.24.0
+    - numpy ~=1.24.4
 
 test:
   imports:
