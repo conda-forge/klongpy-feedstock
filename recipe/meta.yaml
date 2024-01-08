@@ -1,5 +1,5 @@
 {% set name = "klongpy" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/klongpy-{{ version }}.tar.gz
-  sha256: 6c242da56ada1dc39acdce5d96b1d204eff52fd68db227ed1148b1f7f1fdbe69
+  sha256: 06e16e4b095b6e4d3d6b1af6e50616a9eaffa151d3fab81b0fad728fbeff5785
 
 build:
   skip: true  # [py<38]
