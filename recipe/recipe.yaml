@@ -1,0 +1,43 @@
+schema_version: 1
+
+context:
+  name: klongpy
+  version: 0.7.1
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/klongpy-${{ version }}.tar.gz
+  sha256: 1c9a835dddab782f0bda231b818f3720e4619950ae8cc8def2f9f652116db829
+
+build:
+  number: 0
+  skip: match(python, ">3.12")
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python
+    - setuptools >=61.0
+  run:
+    - python
+    - numpy >=2.0
+
+tests:
+  - python:
+      imports:
+        - klongpy
+      pip_check: true
+
+about:
+  summary: Python implementation of Klong language.
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/briangu/klongpy
+
+extra:
+  recipe-maintainers:
+    - thewchan
