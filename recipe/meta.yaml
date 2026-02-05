@@ -10,7 +10,6 @@ source:
   sha256: 11733baf3aad02f14ac437b218869b507a15a01fc5a922dd561923aa401df5d3
 
 build:
-  skip: true  # [py<39 or py>311]
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
@@ -18,10 +17,10 @@ requirements:
   host:
     - pip
     - python
-    - setuptools
+    - setuptools >=61.0
   run:
     - python
-    - numpy ~=1.26.4
+    - numpy >=2.0
 
 test:
   imports:
